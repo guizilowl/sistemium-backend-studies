@@ -1,0 +1,16 @@
+numbers = []
+#laço de repetição pedindo até o quinto número e o fazendo ser guardado na lista
+for i in range (5):
+    number = int(input(f"write the {i + 1}º number: "))
+    numbers.append(number)
+#fazer a soma
+    soma = sum(numbers)
+#definir a multiplicação
+multi = 1
+#outra repetição para N nos numeros com a multiplcação dentro
+for n in numbers:
+    multi *= n
+#printar os numeros, a soma e a multiplicação
+print(f"\n the numbers you have written is {" , " .join(map(str, numbers))}\n")
+print(f"the sum of numbers is {soma} \n")
+print(f"and the mult of all numbers are {multi} \n")
