@@ -1,0 +1,63 @@
+import random
+import sys
+
+def rolld6(rolls):
+    for i in range(0, rolls):
+        d6 = random.randint(1, 6)
+        print("Rolling, good luck!!!!")
+        print("---" +str(d6)+ "---")
+    print()
+    
+def rolld8(rolls):
+    for i in range(0, rolls):
+        d8 = random.randint(1, 8)
+        print("Rolling, good luck!!!!")
+        print("---" +str(d8)+ "---")
+    print()
+
+def rolld4(rolls):
+    for i in range(0, rolls):
+        d4 = random.randint(1, 4)
+        print("Rolling, good luck!!!!")
+        print("---" +str(d4)+ "---")
+    print()
+
+def rolld20(rolls):
+    for i in range(0, rolls):
+        d20 = random.randint(1, 20)
+        print("Rolling, good luck!!!!")
+        print("---" +str(d20)+ "---")
+    print()
+
+def Menu():
+    print("1. d4")
+    print("2. d6")
+    print("3. d8")
+    print("4. d20")
+    print("5. exit")
+
+    choice = int(input("which dice you need roll? "))
+
+    if(choice == 1):
+        rolls = int(input("How many dice you need to roll? "))
+        rolld4(rolls)
+        
+
+    elif(choice == 2):
+        rolls = int(input("How many dice you need to roll? "))
+        rolld6(rolls)
+    
+    elif(choice == 3):
+        rolls = int(input("How many dice you need to roll? "))
+        rolld8(rolls)
+
+    elif(choice == 4):
+        rolls = int(input("How many dice you need to roll? "))
+        rolld20(rolls)
+    
+    else:
+        print("TURNING OFF SYSTEM....:")
+        sys.exit()
+        
+
+Menu()
